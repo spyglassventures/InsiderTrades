@@ -11,20 +11,20 @@ Fig. 1: Stocks with most frequent Insider Trades
 </p>
 <p>
 
-Fig. 2:Stock performance of KTM vs. Insider Trades
+Fig. 2: Stock performance of KTM Industries vs. Insider Trades
 <p align="center">
   <img src="KTM.png" width="100%" title="Broken Container">
 </p>
 
 
 <p>
-Fig. 2:Stock performance of KTM vs. Insider Trades
+Fig. 2: Stock performance of KTM vs. Insider Trades
 <p align="center">
   <img src="Logitech.png" width="100%" title="Broken Container">
 </p>
 
 <p>
-Fig. 3:Stock performance of KTM vs. Insider Trades
+Fig. 3: Stock performance of KTM vs. Insider Trades
 <p align="center">
   <img src="Roche.png" width="100%" title="Broken Container">
 </p>
