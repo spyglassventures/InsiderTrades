@@ -1,11 +1,11 @@
 # Insider Trades Webscraper and Plotting
 With this script, you can download all insider trade from the SIX Stock exchange. 
 In the iPython file, you find how to read in the insider trades for a spefic company and plot its stocks performance against it.
-Find below the companies with most insider trades within the last year and 3 examples of the outcome.
+On this page, you can see which companies had the most insider trade and the bottom of this page, you can find the and 4 examples of the plotted outcome.
 
 ## This is how the script is set-up:
 
-### Imports
+### Import Libraries
 ```python
 import numpy as np
 import pandas as pd
@@ -20,7 +20,7 @@ insider = pd.read_csv("InsiderTrades_20200531-183230.csv")
 I created this file by using selenium webscraper. To see this in action, refer to 
 https://github.com/spyglassventures/InsiderTrades/blob/master/Scraper_InsiderTrades.py
 
-### Fix date
+### Make date type as date
 ```python
 insider['DATUM'] = pd.to_datetime(insider['DATUM'], format='%d.%m.%Y')
 insider = insider.set_index('DATUM')
@@ -52,7 +52,7 @@ insider_most.sort_values('WERT', ascending=False).head(15)
 |Kühne + Nagel International AG	|34|
 
 
-# Lookup files available
+# Lookup files available for import
 ```python
 import os
 os.listdir("./data/") # returns list
@@ -60,7 +60,7 @@ os.listdir("./data/") # returns list
 
 # This is the only field, where you have to make modifications
 You have to specify, which .csv file corresponds with company you choose to display the insider trades with. 
-In our case, there is a .csv file available for Roche (ROG.SW_2020-06-01.csv). We later define the stock name as well (matches entry from the most common companies with insider trades (see above).
+In our case, there is a .csv file available for Roche (ROG.SW_2020-06-01.csv). We later define the stock name as well. It matches the entry from the most common companies with insider trades (see above).
 
 # Load Stock Data
 ```python
@@ -79,7 +79,7 @@ Don't know how to get the stock data? Check out (no pun intended)
 https://github.com/spyglassventures/InsiderTrades/blob/master/PlotInsiderWithLoad.ipynb
 
 
-# Process data
+# Process data and split data in buys and sells
 ```python
 stock1 = stock["Adj Close"]
 stock2 = insider[(insider['EMITTENT'] == stock_name) & (insider['TYP']=='Erwerb')]['WERT']
@@ -90,7 +90,7 @@ merged_df = pd.concat(frames, axis=1)
 merged_df.head()
 ```
 
-# Merge the the dataframes
+# Merge the the dataframes again
 ```python
 merged_df['SELLS'] = merged_df['WERT']
 merged_df = merged_df.drop(['WERT'], axis=1)
