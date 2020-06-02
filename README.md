@@ -155,6 +155,6 @@ Fig. 4: Stock performance of Logitech vs. Insider Trades
 <p>
 Fig. 4: Stock performance of Aevis Victoria vs. Insider Trades
 <p align="center">
-  <img src="Aevis.png" width="100%" title="Broken Container">
+  <img src="aevis.png" width="100%" title="Broken Container">
 </p>
 
