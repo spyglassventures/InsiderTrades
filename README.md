@@ -136,21 +136,25 @@ plt.show()
 ```
 
 
+Fig. 1: Stock performance of Roche Holdings vs. Insider Trades
+<p align="center">
+  <img src="roche.png" width="100%" title="Broken Container">
+</p>
+
 Fig. 2: Stock performance of KTM Industries vs. Insider Trades
 <p align="center">
   <img src="KTM.png" width="100%" title="Broken Container">
 </p>
 
-
 <p>
-Fig. 2: Stock performance of KTM vs. Insider Trades
+Fig. 4: Stock performance of Logitech vs. Insider Trades
 <p align="center">
   <img src="Logitech.png" width="100%" title="Broken Container">
 </p>
 
 <p>
-Fig. 3: Stock performance of KTM vs. Insider Trades
+Fig. 4: Stock performance of Aevis Victoria vs. Insider Trades
 <p align="center">
-  <img src="Roche.png" width="100%" title="Broken Container">
+  <img src="Aevis.png" width="100%" title="Broken Container">
 </p>
 
