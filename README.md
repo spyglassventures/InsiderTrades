@@ -1,6 +1,4 @@
-# InsiderTrades Webscraper and Plotting
-
-Summary:
+# Insider Trades Webscraper and Plotting
 With this script, you can download all insider trade from the SIX Stock exchange. 
 In the iPython file, you find how to read in the insider trades for a spefic company and plot its stocks performance against it.
 Find below the companies with most insider trades within the last year and 3 examples of the outcome.
@@ -15,20 +13,21 @@ import matplotlib.pyplot as plt
 ```
 
 
-# Load Insider Trades
+### Load Insider Trades
 ```python
 insider = pd.read_csv("InsiderTrades_20200531-183230.csv")
 ```
+I created this file by using selenium webscraper. To see this in action, refer to 
+https://github.com/spyglassventures/InsiderTrades/blob/master/Scraper_InsiderTrades.py
 
-
-# Fix date
+### Fix date
 ```python
 insider['DATUM'] = pd.to_datetime(insider['DATUM'], format='%d.%m.%Y')
 insider = insider.set_index('DATUM')
 insider.head()
 ```
 
-# Show most common companies
+### Show most common companies
 ```python
 insider_most = insider.groupby('EMITTENT').count().reset_index()
 insider_most.sort_values('WERT', ascending=False).head(15)
@@ -76,6 +75,9 @@ stock['Date'] = pd.to_datetime(stock['Date'], format='%Y-%m-%d')
 stock = stock.set_index('Date')
 stock.head()
 ```
+Don't know how to get the stock data? Check out (no pun intended)
+https://github.com/spyglassventures/InsiderTrades/blob/master/PlotInsiderWithLoad.ipynb
+
 
 # Process data
 ```python
