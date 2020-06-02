@@ -1,6 +1,6 @@
 # Insider Trades Webscraper and Plotting
 With this script, you can download all insider trade from the SIX Stock exchange. 
-In the iPython file, you find how to read in the insider trades for a spefic company and plot its stocks performance against it.
+In the iPython file, you find how to read in the insider trades for a spefic company and plot its stock's performance against it.
 On this page, you can see which companies had the most insider trade and the bottom of this page, you can find the and 4 examples of the plotted outcome.
 
 ## This is how the script is set-up:
