@@ -134,7 +134,7 @@ plt.title(stock_name+" Stock Performance with Insider Trades")
 fig.tight_layout()  # otherwise the right y-label is slightly clipped
 plt.show()
 ```
-
+___
 
 Fig. 1: Stock performance of Roche Holdings vs. Insider Trades
 <p align="center">
