@@ -34,12 +34,23 @@ insider_most = insider.groupby('EMITTENT').count().reset_index()
 insider_most.sort_values('WERT', ascending=False).head(15)
 ```
 
-<p>
-Fig. 1: Stocks with most frequent Insider Trades
-<p align="center">
-  <img src="MostCommonInsider.PNG" width="50%" title="Broken Container">
-</p>
-<p>
+|EMITTENT|	WERT|
+| ------------- |:-------------:|
+|Alpine Select AG	|172|
+|nebag ag	|99|
+|AEVIS VICTORIA SA	|89|
+|Chocoladefabriken Lindt & Sprüngli AG	|61|
+|EFG International	|50|
+|VZ Holding AG	|44|
+|dormakaba Holding AG	|43|
+|KTM Industries AG	|42|
+|Logitech International S.A.	|42|
+|SGS SA	|39|
+|Edisun Power Europe AG	|38|
+|Roche Holding AG	|37|
+|HIAG Immobilien Holding AG	|35|
+|Schindler Holding AG	|35|
+|Kühne + Nagel International AG	|34|
 
 
 # Lookup files available
